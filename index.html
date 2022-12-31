@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="map">
+                <div class="checkpoint text">1</div>
+                <div class="line"></div>
+                <div class="checkpoint text">2</div>
+                <div class="line"></div>
+                <div class="checkpoint text">3</div>
+            </div>
+            <div class="box1a">
+                <div class="text2">select elements</div>
+                <div class="text2">generate password</div>
+                <div class="text2">copy password</div>
+            </div>
+        </div>
+
+        <div class="box2">
+            <h2>Generate a </h2>
+            <h2 id="h2a">random password</h2>
+            <h2 id="h2b">Never use an insecure password again.</h2>
+        </div>
+        <div class="box3">
+            <p class="para">Select elements for the password</p>
+            <div class="map">
+                <label class="container2">alphabets
+                    <input type="checkbox"  id="pressed">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container2">numericals
+                    <input type="checkbox"  id="pressed1">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container2">symbols
+                    <input type="checkbox"  id="pressed2">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+        <button id="OnClick" onclick="myFunction()"> Generate Password</button>
+        <div class=border></div>
+        <div class="entry">
+            <div class="field">
+                <p id="password"></p>
+            </div>
+            <div class="field">
+                <p id="password2"></p>
+            </div>
+        </div>
+        <button class="copybtn" onclick="copy()"> Copy Clipboard</button>
+        <h1></h1>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
